@@ -1,18 +1,10 @@
 {
   "version": 2,
-  "builds": [
+  "outputDirectory": "dist/enterprise-portfolio/browser",
+  "rewrites": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist/enterprise-portfolio/browser"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/((?!.*\\.).*)",
+      "destination": "/index.html"
     }
   ]
 }
