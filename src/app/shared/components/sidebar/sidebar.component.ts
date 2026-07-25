@@ -35,27 +35,27 @@ import { ThemeService } from '../../../core/services/theme.service';
 
         <a routerLink="/admin/projects" routerLinkActive="active" class="nav-item">
           <i class="fa-solid fa-diagram-project"></i>
-          <span *ngIf="!isCollapsed()">Projects CMS</span>
+          <span *ngIf="!isCollapsed()">Add Projects</span>
         </a>
 
         <a routerLink="/admin/skills" routerLinkActive="active" class="nav-item">
           <i class="fa-solid fa-code"></i>
-          <span *ngIf="!isCollapsed()">Skills Taxonomy</span>
+          <span *ngIf="!isCollapsed()">Add Skills</span>
         </a>
 
         <a routerLink="/admin/experience" routerLinkActive="active" class="nav-item">
           <i class="fa-solid fa-briefcase"></i>
-          <span *ngIf="!isCollapsed()">Work Experience</span>
+          <span *ngIf="!isCollapsed()">Add Work Experience</span>
         </a>
 
         <a routerLink="/admin/education" routerLinkActive="active" class="nav-item">
           <i class="fa-solid fa-graduation-cap"></i>
-          <span *ngIf="!isCollapsed()">Education History</span>
+          <span *ngIf="!isCollapsed()">Add Education History</span>
         </a>
 
         <a routerLink="/admin/ideas" routerLinkActive="active" class="nav-item">
           <i class="fa-solid fa-lightbulb"></i>
-          <span *ngIf="!isCollapsed()">Roadmap & Ideas</span>
+          <span *ngIf="!isCollapsed()">Add Ideas</span>
         </a>
 
         <span class="section-label" *ngIf="!isCollapsed()">METRICS & AUDIT</span>

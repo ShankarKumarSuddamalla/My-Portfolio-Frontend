@@ -584,7 +584,7 @@ export class PublicPortfolioComponent implements OnInit, OnDestroy {
   public skillCategories = ['All', 'Languages', 'Frameworks', 'Databases', 'Messaging', 'Caching', 'Cloud', 'DevOps', 'Testing', 'Tools'];
 
   // Typing Effect Roles
-  public roles = ['Backend Java Developer', 'Full-Stack Engineer (TCS)', 'Microservices & Kafka Specialist', 'Spring Boot & Angular Architect'];
+  public roles = ['Full Stack Engineer', 'Backend Developer', 'Spring Boot Developer', 'Angular Developer'];
   public currentTypedRole = signal<string>('');
   private roleIndex = 0;
   private charIndex = 0;
