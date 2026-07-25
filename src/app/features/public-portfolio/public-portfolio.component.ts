@@ -87,7 +87,7 @@ import { SkeletonLoaderComponent } from '../../shared/components/skeleton-loader
             <div class="avatar-glass-frame">
               <img [src]="profile()?.avatarUrl || '/assets/profile.png'" alt="Alex Mercer" class="hero-avatar-img" />
               <div class="floating-tech-badge badge-1 glass-card">
-                <i class="fa-fab fa-angular text-rose"></i>
+                <i class="fa-solid fa-leaf text-emerald"></i>
                 <span>Spring Boot</span>
               </div>
               <div class="floating-tech-badge badge-2 glass-card">
@@ -97,6 +97,10 @@ import { SkeletonLoaderComponent } from '../../shared/components/skeleton-loader
               <div class="floating-tech-badge badge-3 glass-card">
                 <i class="fa-solid fa-network-wired text-cyan"></i>
                 <span>Kafka Events</span>
+              </div>
+              <div class="floating-tech-badge badge-4 glass-card">
+                <i class="fa-solid fa-database text-purple"></i>
+                <span>PostgreSQL</span>
               </div>
             </div>
           </div>
@@ -467,7 +471,7 @@ import { SkeletonLoaderComponent } from '../../shared/components/skeleton-loader
     .hero-avatar-col { display: flex; justify-content: center; }
     .avatar-glass-frame { position: relative; width: 340px; height: 340px; border-radius: var(--border-radius-lg); padding: 10px; background: var(--gradient-glass); border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow); }
     .hero-avatar-img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--border-radius-md); }
-    .floating-tech-badge { position: absolute; padding: 8px 14px; border-radius: var(--border-radius-full); display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.82rem; &.badge-1 { top: -15px; right: -20px; } &.badge-2 { bottom: 20px; left: -25px; } &.badge-3 { bottom: -15px; right: 10px; } }
+    .floating-tech-badge { position: absolute; padding: 8px 14px; border-radius: var(--border-radius-full); display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.82rem; &.badge-1 { top: -15px; right: -20px; } &.badge-2 { top: 30px; left: -30px; } &.badge-3 { bottom: 20px; right: -25px; } &.badge-4 { bottom: -15px; left: 10px; } }
     
     // ABOUT
     .mb-5 { margin-bottom: 32px; }
@@ -559,6 +563,7 @@ import { SkeletonLoaderComponent } from '../../shared/components/skeleton-loader
     .text-rose { color: #f43f5e; }
     .text-amber { color: #f59e0b; }
     .text-cyan { color: #38bdf8; }
+    .text-purple { color: #a855f7; }
   `]
 })
 export class PublicPortfolioComponent implements OnInit, OnDestroy {
