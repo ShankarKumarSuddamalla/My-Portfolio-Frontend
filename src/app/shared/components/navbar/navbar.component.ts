@@ -32,7 +32,7 @@ import { AuthService } from '../../../core/authentication/auth.service';
           <a href="#ideas" (click)="scrollTo('ideas', $event)" class="nav-link">Roadmap</a>
           <a href="#resume" (click)="scrollTo('resume', $event)" class="nav-link">Resume</a>
           <a href="#contact" (click)="scrollTo('contact', $event)" class="nav-link">Contact</a>
-        </div>
+        </div><!-- he-->
 
         <!-- Right Controls -->
         <div class="nav-actions">
