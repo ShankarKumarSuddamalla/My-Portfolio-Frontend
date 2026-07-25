@@ -1,5 +1,5 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ExperienceService } from '../../core/services/experience.service';
 import { ToastService } from '../../core/services/toast.service';
@@ -34,7 +34,7 @@ import { ConfirmDialogComponent } from '../../shared/components/confirm-dialog/c
                 <span class="company">{{ exp.company }} — {{ exp.location }}</span>
               </div>
               <div class="exp-right">
-                <span class="duration badge badge-accent">{{ exp.startDate | date:'MMM yyyy' }} - {{ exp.isCurrent ? 'Present' : (exp.endDate | date:'MMM yyyy') }}</span>
+                <span class="duration badge badge-accent">{{ formatExpDate(exp.startDate) }} - {{ exp.isCurrent ? 'Present' : formatExpDate(exp.endDate) }}</span>
                 <div class="action-btns">
                   <button (click)="openEditModal(exp)" class="icon-btn edit" title="Edit"><i class="fa-solid fa-pen-to-square"></i></button>
                   <button (click)="deleteExperience(exp)" class="icon-btn delete" title="Delete"><i class="fa-solid fa-trash-can"></i></button>
@@ -82,6 +82,13 @@ export class WorkExperienceComponent implements OnInit {
 
   public ngOnInit(): void {
     this.loadExperiences();
+  }
+
+  public formatExpDate(dateStr: string | null | undefined): string {
+    if (!dateStr) return 'Present';
+    if (dateStr.toLowerCase() === 'present' || dateStr.toLowerCase() === 'current') return 'Present';
+    const parsed = new Date(dateStr);
+    return isNaN(parsed.getTime()) ? dateStr : new DatePipe('en-US').transform(parsed, 'MMM yyyy') || dateStr;
   }
 
   public loadExperiences(): void {

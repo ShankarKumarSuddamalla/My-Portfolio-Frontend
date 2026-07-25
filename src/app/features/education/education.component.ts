@@ -1,5 +1,5 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { EducationService } from '../../core/services/education.service';
 import { ToastService } from '../../core/services/toast.service';
@@ -41,7 +41,7 @@ import { ConfirmDialogComponent } from '../../shared/components/confirm-dialog/c
 
             <div class="card-meta">
               <span class="badge badge-emerald">CGPA: {{ edu.cgpa }}</span>
-              <span class="timeframe">{{ edu.startDate | date:'yyyy' }} - {{ edu.endDate | date:'yyyy' }}</span>
+              <span class="timeframe">{{ formatExpDate(edu.startDate) }} - {{ formatExpDate(edu.endDate) }}</span>
             </div>
           </div>
         }
@@ -68,6 +68,13 @@ export class EducationComponent implements OnInit {
 
   public ngOnInit(): void {
     this.loadEducation();
+  }
+
+  public formatExpDate(dateStr: string | null | undefined): string {
+    if (!dateStr) return 'Present';
+    if (dateStr.toLowerCase() === 'present' || dateStr.toLowerCase() === 'current') return 'Present';
+    const parsed = new Date(dateStr);
+    return isNaN(parsed.getTime()) ? dateStr : new DatePipe('en-US').transform(parsed, 'yyyy') || dateStr;
   }
 
   public loadEducation(): void {
