@@ -13,12 +13,11 @@ import { CommonModule } from '@angular/common';
             <span class="gradient-text">Shankar Kumar Suddamalla</span>
           </div>
           <p class="summary">
-            Backend Java Developer & Full-Stack Engineer. Specialized in Java, Spring Boot, Microservices Architecture, Kafka, Apache Ignite, PostgreSQL, and Angular.
+            Backend Java Developer & Full-Stack Engineer. Specialized in Java, Spring Boot, Microservices Architecture, Kafka, Apache Ignite, and PostgreSQL.
           </p>
           <div class="social-links">
-            <a href="https://github.com/shankarkumar-s" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://linkedin.com/in/shankar-kumar-suddamalla" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://twitter.com/shankarkumars" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://github.com/ShankarKumarSuddamalla" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/suddamallashankarkumar/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             <a href="mailto:suddamallashankarkumar@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>

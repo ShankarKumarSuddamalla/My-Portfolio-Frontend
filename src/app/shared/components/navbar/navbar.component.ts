@@ -17,7 +17,7 @@ import { AuthService } from '../../../core/authentication/auth.service';
             <i class="fa-solid fa-code-branch"></i>
           </div>
           <div class="brand-text">
-            <span class="name">SHANKAR KUMAR</span>
+            <span class="name">SHANKAR KUMAR SUDDAMALLA</span>
             <span class="tag">BACKEND & FULL-STACK ENGINEER</span>
           </div>
         </a>
@@ -29,7 +29,7 @@ import { AuthService } from '../../../core/authentication/auth.service';
           <a href="#experience" (click)="scrollTo('experience', $event)" class="nav-link">Experience</a>
           <a href="#education" (click)="scrollTo('education', $event)" class="nav-link">Education</a>
           <a href="#projects" (click)="scrollTo('projects', $event)" class="nav-link">Projects</a>
-          <a href="#ideas" (click)="scrollTo('ideas', $event)" class="nav-link">Roadmap</a>
+          <a href="#ideas" (click)="scrollTo('ideas', $event)" class="nav-link">Ideas</a>
           <a href="#resume" (click)="scrollTo('resume', $event)" class="nav-link">Resume</a>
           <a href="#contact" (click)="scrollTo('contact', $event)" class="nav-link">Contact</a>
         </div><!-- he-->
