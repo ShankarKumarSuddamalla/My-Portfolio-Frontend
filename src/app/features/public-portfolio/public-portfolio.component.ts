@@ -675,7 +675,15 @@ export class PublicPortfolioComponent implements OnInit, OnDestroy {
   }
 
   public downloadResume(): void {
-    this.toastService.success('Resume Download', 'Downloading Shankar Kumar Suddamalla - Backend Java Developer CV (PDF)...');
+    const resumeUrl = this.profile()?.resumeUrl || '/assets/resume.pdf';
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.target = '_blank';
+    link.download = 'Shankar_Kumar_Suddamalla_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    this.toastService.success('Resume Download', 'Downloading Shankar Kumar Suddamalla CV (PDF)...');
   }
 
   public sendContactMessage(): void {
