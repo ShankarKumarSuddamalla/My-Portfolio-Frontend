@@ -62,24 +62,24 @@ import { SkeletonLoaderComponent } from '../../shared/components/skeleton-loader
 
               <a href="#projects" class="btn-outline-primary">
                 <i class="fa-solid fa-eye"></i>
-                <span>Explore Systems</span>
+                <span>Explore Projects</span>
               </a>
             </div>
 
             <!-- Metric Counter Pills -->
             <div class="hero-metrics">
               <div class="metric-card glass-card">
-                <span class="metric-value">9+</span>
+                <span class="metric-value">0-2</span>
                 <span class="metric-label">Years Experience</span>
               </div>
-              <div class="metric-card glass-card">
+              <!--<div class="metric-card glass-card">
                 <span class="metric-value">42+</span>
                 <span class="metric-label">Enterprise Apps</span>
               </div>
               <div class="metric-card glass-card">
                 <span class="metric-value">500k</span>
                 <span class="metric-label">Req/Sec Scale</span>
-              </div>
+              </div>-->
             </div>
           </div>
 
@@ -88,7 +88,7 @@ import { SkeletonLoaderComponent } from '../../shared/components/skeleton-loader
               <img [src]="profile()?.avatarUrl || '/assets/profile.png'" alt="Alex Mercer" class="hero-avatar-img" />
               <div class="floating-tech-badge badge-1 glass-card">
                 <i class="fa-fab fa-angular text-rose"></i>
-                <span>Angular 21</span>
+                <span>Spring Boot</span>
               </div>
               <div class="floating-tech-badge badge-2 glass-card">
                 <i class="fa-brands fa-java text-amber"></i>
@@ -96,7 +96,7 @@ import { SkeletonLoaderComponent } from '../../shared/components/skeleton-loader
               </div>
               <div class="floating-tech-badge badge-3 glass-card">
                 <i class="fa-solid fa-network-wired text-cyan"></i>
-                <span>Kafka Event Mesh</span>
+                <span>Kafka Events</span>
               </div>
             </div>
           </div>
